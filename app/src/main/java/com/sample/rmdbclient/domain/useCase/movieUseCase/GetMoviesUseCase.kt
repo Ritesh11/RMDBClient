@@ -1,4 +1,4 @@
-package com.sample.rmdbclient.domain.movieUseCase
+package com.sample.rmdbclient.domain.useCase.movieUseCase
 
 import com.sample.rmdbclient.data.api.model.movies.Movie
 import com.sample.rmdbclient.domain.repository.MovieRepository

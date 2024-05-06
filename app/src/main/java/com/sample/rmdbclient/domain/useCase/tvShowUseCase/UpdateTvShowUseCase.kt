@@ -1,4 +1,4 @@
-package com.sample.rmdbclient.domain.tvShowUseCase
+package com.sample.rmdbclient.domain.useCase.tvShowUseCase
 
 import com.sample.rmdbclient.data.api.model.tvshow.TvShow
 import com.sample.rmdbclient.domain.repository.TvShowRepository
