@@ -5,7 +5,6 @@ plugins {
 }
 
 
-
 android {
     namespace = "com.sample.rmdbclient"
     compileSdk = 34
@@ -19,6 +18,7 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         buildConfigField("String","API_KEY","\"b90d98490336205760d82844143d4061\"")
+        buildConfigField("String","BASE_URL","\"https://api.themoviedb.org/3/\"")
     }
 
     buildTypes {
@@ -46,7 +46,7 @@ android {
 
 dependencies {
     val lifecycle_version = "2.7.0"
-    val dagger_version = "2.28.1"
+    val dagger_version = "2.24"
     val room_version = "2.6.1"
     val coroutine_version = "1.3.7"
     val retrofit_version = "2.11.0"
