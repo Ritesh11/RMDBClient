@@ -9,7 +9,7 @@ import retrofit2.http.Query
 
 interface RMDBService {
 
-    @GET("trending/movie")
+    @GET("movie/11")
     suspend fun getTrendingMovie(@Query("api_key") apiKey: String): Response<MovieList>
 
     @GET("trending/tv")
