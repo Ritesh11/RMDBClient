@@ -1,7 +1,7 @@
 package com.sample.rmdbclient.data.repository.artist
 
 import android.util.Log
-import com.sample.rmdbclient.data.api.model.artist.Artist
+import com.sample.rmdbclient.data.model.artist.Artist
 import com.sample.rmdbclient.data.repository.artist.dataSource.ArtistCacheDataSource
 import com.sample.rmdbclient.data.repository.artist.dataSource.ArtistLocalDataSource
 import com.sample.rmdbclient.data.repository.artist.dataSource.ArtistRemoteDataSource

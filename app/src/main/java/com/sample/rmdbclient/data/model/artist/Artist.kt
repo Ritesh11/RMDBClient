@@ -1,11 +1,11 @@
-package com.sample.rmdbclient.data.api.model.artist
+package com.sample.rmdbclient.data.model.artist
 
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import com.google.gson.annotations.SerializedName
 
-@Entity(tableName = "trending_artists")
+@Entity(tableName = "popular_artists")
 data class Artist(
     @PrimaryKey
     @SerializedName("id")

@@ -1,6 +1,6 @@
 package com.sample.rmdbclient.domain.repository
 
-import com.sample.rmdbclient.data.api.model.movies.Movie
+import com.sample.rmdbclient.data.model.movies.Movie
 
 interface MovieRepository {
 

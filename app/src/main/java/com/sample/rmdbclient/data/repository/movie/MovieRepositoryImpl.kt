@@ -1,7 +1,7 @@
 package com.sample.rmdbclient.data.repository.movie
 
 import android.util.Log
-import com.sample.rmdbclient.data.api.model.movies.Movie
+import com.sample.rmdbclient.data.model.movies.Movie
 import com.sample.rmdbclient.data.repository.movie.dataSource.MovieCacheDataSource
 import com.sample.rmdbclient.data.repository.movie.dataSource.MovieLocalDataSource
 import com.sample.rmdbclient.data.repository.movie.dataSource.MovieRemoteDataSource

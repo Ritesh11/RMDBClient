@@ -1,7 +1,7 @@
 package com.sample.rmdbclient.data.repository.artist.dataSourceImpl
 
 import com.sample.rmdbclient.data.api.RMDBService
-import com.sample.rmdbclient.data.api.model.artist.ArtistList
+import com.sample.rmdbclient.data.model.artist.ArtistList
 import com.sample.rmdbclient.data.repository.artist.dataSource.ArtistRemoteDataSource
 import retrofit2.Response
 

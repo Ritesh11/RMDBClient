@@ -1,6 +1,6 @@
 package com.sample.rmdbclient.data.repository.artist.dataSourceImpl
 
-import com.sample.rmdbclient.data.api.model.artist.Artist
+import com.sample.rmdbclient.data.model.artist.Artist
 import com.sample.rmdbclient.data.db.ArtistDao
 import com.sample.rmdbclient.data.repository.artist.dataSource.ArtistLocalDataSource
 import kotlinx.coroutines.CoroutineScope

@@ -1,7 +1,7 @@
 package com.sample.rmdbclient.data.repository.tvShow.dataSourceImpl
 
 import com.sample.rmdbclient.data.api.RMDBService
-import com.sample.rmdbclient.data.api.model.tvshow.TvShowList
+import com.sample.rmdbclient.data.model.tvshow.TvShowList
 import com.sample.rmdbclient.data.repository.tvShow.dataSource.TvShowRemoteDataSource
 import retrofit2.Response
 

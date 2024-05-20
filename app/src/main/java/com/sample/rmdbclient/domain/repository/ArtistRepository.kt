@@ -1,6 +1,6 @@
 package com.sample.rmdbclient.domain.repository
 
-import com.sample.rmdbclient.data.api.model.artist.Artist
+import com.sample.rmdbclient.data.model.artist.Artist
 
 interface ArtistRepository {
 

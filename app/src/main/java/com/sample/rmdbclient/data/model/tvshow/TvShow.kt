@@ -1,11 +1,11 @@
-package com.sample.rmdbclient.data.api.model.tvshow
+package com.sample.rmdbclient.data.model.tvshow
 
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import com.google.gson.annotations.SerializedName
 
-@Entity(tableName = "trending_tvShows")
+@Entity(tableName = "popular_tvShows")
 data class TvShow(
     @PrimaryKey
     @SerializedName("id")

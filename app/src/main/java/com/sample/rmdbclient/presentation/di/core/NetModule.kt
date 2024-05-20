@@ -12,31 +12,18 @@ import javax.inject.Singleton
 
 @Module
 class NetModule(private val baseUrl: String) {
-
     @Singleton
     @Provides
     fun provideRetrofit(): Retrofit {
-        val interceptor = HttpLoggingInterceptor()
-        interceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
-
-        val okHttpClient = OkHttpClient.Builder()
-            .addNetworkInterceptor(interceptor)
-            .connectTimeout(30, TimeUnit.SECONDS)
-            .writeTimeout(30, TimeUnit.SECONDS)
-            .readTimeout(30, TimeUnit.SECONDS)
-            .build()
-
         return Retrofit.Builder()
-            .client(okHttpClient)
             .addConverterFactory(GsonConverterFactory.create())
             .baseUrl(baseUrl)
             .build()
     }
 
-
     @Singleton
     @Provides
-    fun provideRmdbService(retrofit: Retrofit): RMDBService{
+    fun provideTMDBService(retrofit: Retrofit): RMDBService {
         return retrofit.create(RMDBService::class.java)
     }
 }

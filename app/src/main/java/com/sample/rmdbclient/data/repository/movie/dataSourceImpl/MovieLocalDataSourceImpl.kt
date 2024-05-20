@@ -1,6 +1,6 @@
 package com.sample.rmdbclient.data.repository.movie.dataSourceImpl
 
-import com.sample.rmdbclient.data.api.model.movies.Movie
+import com.sample.rmdbclient.data.model.movies.Movie
 import com.sample.rmdbclient.data.db.MovieDao
 import com.sample.rmdbclient.data.repository.movie.dataSource.MovieLocalDataSource
 import kotlinx.coroutines.CoroutineScope

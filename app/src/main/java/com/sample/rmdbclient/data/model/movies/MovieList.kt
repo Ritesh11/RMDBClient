@@ -1,4 +1,4 @@
-package com.sample.rmdbclient.data.api.model.movies
+package com.sample.rmdbclient.data.model.movies
 
 
 import com.google.gson.annotations.SerializedName

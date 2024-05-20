@@ -1,7 +1,7 @@
 package com.sample.rmdbclient.data.repository.tvShow
 
 import android.util.Log
-import com.sample.rmdbclient.data.api.model.tvshow.TvShow
+import com.sample.rmdbclient.data.model.tvshow.TvShow
 import com.sample.rmdbclient.data.repository.tvShow.dataSource.TvShowRemoteDataSource
 import com.sample.rmdbclient.data.repository.tvShow.dataSource.TvShowsCacheDataSource
 import com.sample.rmdbclient.data.repository.tvShow.dataSource.TvShowsLocalDataSource

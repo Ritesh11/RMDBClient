@@ -1,4 +1,4 @@
-package com.sample.rmdbclient.data.api.model.artist
+package com.sample.rmdbclient.data.model.artist
 
 
 import com.google.gson.annotations.SerializedName

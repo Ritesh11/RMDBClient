@@ -1,6 +1,6 @@
 package com.sample.rmdbclient.data.repository.tvShow.dataSource
 
-import com.sample.rmdbclient.data.api.model.tvshow.TvShow
+import com.sample.rmdbclient.data.model.tvshow.TvShow
 
 interface TvShowsCacheDataSource {
 

@@ -1,6 +1,6 @@
 package com.sample.rmdbclient.data.repository.movie.dataSource
 
-import com.sample.rmdbclient.data.api.model.movies.Movie
+import com.sample.rmdbclient.data.model.movies.Movie
 
 interface MovieCacheDataSource {
 

@@ -4,7 +4,7 @@ import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
-import com.sample.rmdbclient.data.api.model.tvshow.TvShow
+import com.sample.rmdbclient.data.model.tvshow.TvShow
 
 @Dao
 interface TvShowDao {
@@ -12,9 +12,9 @@ interface TvShowDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun saveTvShows(artists: List<TvShow>)
 
-    @Query("Delete from trending_tvShows")
+    @Query("Delete from popular_tvShows")
     suspend fun deleteAllTvShows()
 
-    @Query("Select * From trending_tvShows")
+    @Query("Select * From popular_tvShows")
     suspend fun getTvShows(): List<TvShow>
 }

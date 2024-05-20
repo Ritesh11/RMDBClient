@@ -1,7 +1,7 @@
 package com.sample.rmdbclient.data.repository.movie.dataSourceImpl
 
 import com.sample.rmdbclient.data.api.RMDBService
-import com.sample.rmdbclient.data.api.model.movies.MovieList
+import com.sample.rmdbclient.data.model.movies.MovieList
 import com.sample.rmdbclient.data.repository.movie.dataSource.MovieRemoteDataSource
 import retrofit2.Response
 
