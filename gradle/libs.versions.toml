@@ -9,4 +9,4 @@ androidx-junit-ktx = { group = "androidx.test.ext", name = "junit-ktx", version.
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
 jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
-
+hilt = { id = "com.google.dagger.hilt.android", version = "2.43.2" }

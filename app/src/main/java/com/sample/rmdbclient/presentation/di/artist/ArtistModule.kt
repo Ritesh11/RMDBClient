@@ -5,11 +5,15 @@ import com.sample.rmdbclient.domain.useCase.artistUseCase.UpdateArtistUseCase
 import com.sample.rmdbclient.presentation.artist.ArtistViewModelFactory
 import dagger.Module
 import dagger.Provides
+import dagger.hilt.InstallIn
+import dagger.hilt.android.components.ActivityComponent
+import dagger.hilt.android.scopes.ActivityScoped
 
 @Module
+@InstallIn(ActivityComponent::class)
 class ArtistModule {
 
-    @ArtistScope
+    @ActivityScoped
     @Provides
     fun provideArtistViewModelFactory(
         getArtistUseCase: GetArtistUseCase,

@@ -1,6 +1,7 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    alias(libs.plugins.hilt)
     id("kotlin-kapt")
 }
 
@@ -40,7 +41,6 @@ android {
     buildFeatures {
         dataBinding = true
         viewBinding = true
-        buildConfig = true
     }
 }
 
@@ -83,8 +83,12 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutine_version")
 
     // Dagger
-    implementation ("com.google.dagger:dagger:$dagger_version")
-    kapt ("com.google.dagger:dagger-compiler:$dagger_version")
+    /*implementation ("com.google.dagger:dagger:$dagger_version")
+    kapt ("com.google.dagger:dagger-compiler:$dagger_version")*/
+
+    // hilt
+    implementation("com.google.dagger:hilt-android:2.43.2")
+    kapt("com.google.dagger:hilt-android-compiler:2.43.2")
 
     // Retrofit
     implementation("com.squareup.retrofit2:retrofit:$retrofit_version")
@@ -111,4 +115,9 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 
     androidTestImplementation ("com.google.truth.extensions:truth-java8-extension:1.1.3")
+}
+
+// Allow references to generated code
+kapt {
+    correctErrorTypes = true
 }

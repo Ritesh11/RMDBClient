@@ -11,9 +11,12 @@ import com.sample.rmdbclient.domain.useCase.tvShowUseCase.GetTvShowUseCase
 import com.sample.rmdbclient.domain.useCase.tvShowUseCase.UpdateTvShowUseCase
 import dagger.Module
 import dagger.Provides
+import dagger.hilt.InstallIn
+import dagger.hilt.components.SingletonComponent
 import javax.inject.Singleton
 
 @Module
+@InstallIn(SingletonComponent::class)
 class UseCaseModule {
 
 

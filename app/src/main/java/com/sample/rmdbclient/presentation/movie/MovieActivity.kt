@@ -14,9 +14,11 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.sample.rmdbclient.R
 import com.sample.rmdbclient.databinding.ActivityMoviesBinding
 import com.sample.rmdbclient.presentation.di.Injector
+import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
 
+@AndroidEntryPoint
 class MovieActivity : AppCompatActivity() {
 
     @Inject

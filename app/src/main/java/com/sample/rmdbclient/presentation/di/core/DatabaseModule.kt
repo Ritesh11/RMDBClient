@@ -8,9 +8,12 @@ import com.sample.rmdbclient.data.db.RMDBDatabase
 import com.sample.rmdbclient.data.db.TvShowDao
 import dagger.Module
 import dagger.Provides
+import dagger.hilt.InstallIn
+import dagger.hilt.components.SingletonComponent
 import javax.inject.Singleton
 
 @Module
+@InstallIn(SingletonComponent::class)
 class DatabaseModule {
 
     @Singleton

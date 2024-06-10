@@ -13,8 +13,10 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.sample.rmdbclient.R
 import com.sample.rmdbclient.databinding.ActivityArtistBinding
 import com.sample.rmdbclient.presentation.di.Injector
+import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
+@AndroidEntryPoint
 class ArtistActivity : AppCompatActivity() {
 
     @Inject
