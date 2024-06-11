@@ -1,5 +1,6 @@
 package com.sample.rmdbclient.presentation.di.core
 
+import com.sample.rmdbclient.BuildConfig
 import com.sample.rmdbclient.data.api.RMDBService
 import com.sample.rmdbclient.data.db.RMDBDatabase
 import com.sample.rmdbclient.data.repository.artist.dataSource.ArtistRemoteDataSource
@@ -16,23 +17,23 @@ import javax.inject.Singleton
 
 @Module
 @InstallIn(SingletonComponent::class)
-class RemoteDataModule(private val apiKey: String) {
+class RemoteDataModule() {
 
 
     @Singleton
     @Provides
     fun provideMovieRemoteDataSource(rmdbService: RMDBService): MovieRemoteDataSource {
-        return MovieRemoteDataSourceImpl(rmdbService, apiKey)
+        return MovieRemoteDataSourceImpl(rmdbService, BuildConfig.API_KEY)
     }
  @Singleton
     @Provides
     fun provideTvShowsRemoteDataSource(rmdbService: RMDBService): TvShowRemoteDataSource {
-        return TvShowRemoteDataSourceImpl(rmdbService, apiKey)
+        return TvShowRemoteDataSourceImpl(rmdbService, BuildConfig.API_KEY)
     }
  @Singleton
     @Provides
     fun provideArtistRemoteDataSource(rmdbService: RMDBService): ArtistRemoteDataSource {
-        return ArtistRemoteDataSourceImpl(rmdbService, apiKey)
+        return ArtistRemoteDataSourceImpl(rmdbService, BuildConfig.API_KEY)
     }
 
 }

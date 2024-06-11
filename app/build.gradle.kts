@@ -46,17 +46,17 @@ android {
 
 dependencies {
     implementation(libs.androidx.junit.ktx)
-    val lifecycle_version = "2.7.0"
+    val lifecycle_version = "2.8.1"
     val dagger_version = "2.24"
     val room_version = "2.6.1"
-    val coroutine_version = "1.3.7"
+    val coroutine_version = "1.8.1"
     val retrofit_version = "2.11.0"
-    val interseptor_version = "4.7.0"
+    val interseptor_version = "4.12.0"
     val glide_version = "4.16.0"
     val arch_version = "2.2.0"
 
     implementation("androidx.core:core-ktx:1.13.1")
-    implementation("androidx.appcompat:appcompat:1.6.1")
+    implementation("androidx.appcompat:appcompat:1.7.0")
     implementation("com.google.android.material:material:1.12.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
 
@@ -79,7 +79,7 @@ dependencies {
 
     // Coroutine
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutine_version")
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.2.1")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.8.1")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutine_version")
 
     // Dagger
@@ -87,34 +87,34 @@ dependencies {
     kapt ("com.google.dagger:dagger-compiler:$dagger_version")*/
 
     // hilt
-    implementation("com.google.dagger:hilt-android:2.43.2")
-    kapt("com.google.dagger:hilt-android-compiler:2.43.2")
+    implementation("com.google.dagger:hilt-android:2.51.1")
+    kapt("com.google.dagger:hilt-android-compiler:2.51.1")
 
     // Retrofit
     implementation("com.squareup.retrofit2:retrofit:$retrofit_version")
     implementation("com.squareup.retrofit2:converter-gson:$retrofit_version")
     implementation("com.squareup.okhttp3:logging-interceptor:$interseptor_version")
-    implementation ("com.squareup.okhttp3:okhttp:4.9.1")
+    implementation ("com.squareup.okhttp3:okhttp:4.12.0")
     // Glide
     implementation ("com.github.bumptech.glide:glide:$glide_version")
     kapt ("com.github.bumptech.glide:compiler:$glide_version")
 
     testImplementation ("junit:junit:4.13.2")
     testImplementation("androidx.arch.core:core-testing:$arch_version")
-    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.2.1")
-    testImplementation ("com.google.truth:truth:1.1.3")
+    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.8.1")
+    testImplementation ("com.google.truth:truth:1.4.2")
     testImplementation("androidx.test.ext:junit:1.1.5")
     testImplementation ("org.robolectric:robolectric:4.12.2")
 
 
     androidTestImplementation ("junit:junit:4.13.2")
     androidTestImplementation("androidx.arch.core:core-testing:$arch_version")
-    androidTestImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.2.1")
-    androidTestImplementation ("com.google.truth:truth:1.1.3")
+    androidTestImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.8.1")
+    androidTestImplementation ("com.google.truth:truth:1.4.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 
-    androidTestImplementation ("com.google.truth.extensions:truth-java8-extension:1.1.3")
+    androidTestImplementation ("com.google.truth.extensions:truth-java8-extension:1.4.2")
 }
 
 // Allow references to generated code

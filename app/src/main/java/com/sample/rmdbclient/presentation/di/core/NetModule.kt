@@ -1,5 +1,6 @@
 package com.sample.rmdbclient.presentation.di.core
 
+import com.sample.rmdbclient.BuildConfig
 import com.sample.rmdbclient.data.api.RMDBService
 import dagger.Module
 import dagger.Provides
@@ -14,13 +15,13 @@ import javax.inject.Singleton
 
 @Module
 @InstallIn(SingletonComponent::class)
-class NetModule(private val baseUrl: String) {
+class NetModule() {
     @Singleton
     @Provides
     fun provideRetrofit(): Retrofit {
         return Retrofit.Builder()
             .addConverterFactory(GsonConverterFactory.create())
-            .baseUrl(baseUrl)
+            .baseUrl(BuildConfig.BASE_URL)
             .build()
     }
 

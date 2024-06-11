@@ -1,5 +1,6 @@
 package com.sample.rmdbclient.presentation.di.core
 
+import android.app.Application
 import android.content.Context
 import androidx.room.Room
 import com.sample.rmdbclient.data.db.ArtistDao
@@ -18,8 +19,8 @@ class DatabaseModule {
 
     @Singleton
     @Provides
-    fun provideMovieDatabase(context: Context): RMDBDatabase{
-        return Room.databaseBuilder(context, RMDBDatabase::class.java,"rmdbClient")
+    fun provideMovieDatabase(app: Application): RMDBDatabase{
+        return Room.databaseBuilder(app, RMDBDatabase::class.java,"rmdbClient")
             .build()
     }
 
