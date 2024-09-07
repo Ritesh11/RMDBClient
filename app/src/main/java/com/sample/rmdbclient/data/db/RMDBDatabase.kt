@@ -5,9 +5,6 @@ import androidx.room.RoomDatabase
 import com.sample.rmdbclient.data.model.artist.Artist
 import com.sample.rmdbclient.data.model.movies.Movie
 import com.sample.rmdbclient.data.model.tvshow.TvShow
-import com.sample.rmdbclient.data.db.ArtistDao
-import com.sample.rmdbclient.data.db.MovieDao
-import com.sample.rmdbclient.data.db.TvShowDao
 
 @Database(
     entities = [Movie::class, TvShow::class, Artist::class],
